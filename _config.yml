@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://blog.xycode.club
+url: https://www.xycode.club
 permalink: posts/:abbrlink.html  # 此处可以自己设置，也可以直接使用 :/abbrlink
 abbrlink:
     alg: crc16   #算法： crc16(default) and crc32
@@ -102,10 +102,26 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: butterfly
 
+kramed:
+  gfm: true
+  pedantic: false
+  sanitize: farse
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+baidu_url_submit:
+  count: 200
+  host: https://www.xycode.club
+  token: TIe8YYgSdArzUL2F
+  path: baidu_urls.txt
+
 deploy:
-  type: 'git'
-  repo: git@github.com:XYCode-Kerman/xycode-blog.git
-  branch: master
-  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+  - type: 'git'
+    repo: git@github.com:XYCode-Kerman/xycode-blog.git
+    branch: master
+    message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+  - type: 'baidu_url_submitter'

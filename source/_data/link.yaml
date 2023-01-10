@@ -1,0 +1,19 @@
+- class_name: 友情链接
+  class_desc: 感谢
+  link_list:
+    - name: Hexo
+      link: https://hexo.io/zh-cn/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简单且强大的博客框架
+    - name: Butterfly
+      link: https://butterfly.js.org/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 一个多功能的HEXO主题，也是本站目前所害死用的
+
+- class_name: 我的网站
+  class_desc: UP自己写的那些网站
+  link_list:
+    - name: 净网违法证据分享
+      link: http://clean.www.xycode.club/
+      avatar: https://global-image-bed-1302614822.cos.ap-nanjing.myqcloud.com/images202301071550835.png
+      descr: 备注：闭源网站！代码均经过混淆！图片允许转载，请遵循CC-BY-SA 3.0协议！
